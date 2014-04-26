@@ -11,8 +11,8 @@ public:
     virtual int left(int pos) const = 0; // Return left child position
     virtual int righ(int pos) const = 0;// Return right child position
     virtual int parent(int pos) const = 0; // Return parent position
-    //virtual void buildMaxHeap() = 0; // Heapify contents of Heap
-    //virtual void insert(const E& it) = 0; // Insert "it" into the heap
-    //virtual E removefirst() = 0; // Remove first value
-    //virtual E remove(int pos) = 0; // Remove and return element at specified position
+    virtual void buildMaxHeap() = 0; // Heapify contents of Heap
+    virtual void insert(const E& it) = 0; // Insert "it" into the heap
+    virtual E removefirst() = 0; // Remove first value
+    virtual E remove(int pos) = 0; // Remove and return element at specified position
 };
